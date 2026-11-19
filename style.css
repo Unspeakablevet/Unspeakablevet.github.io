@@ -371,8 +371,30 @@
 
       .about-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.05fr 0.75fr 1fr;
         gap: 110px;
+      }
+
+      .about-profile {
+        margin: 0;
+        border: 1px solid var(--line);
+        background: #152236;
+        overflow: hidden;
+      }
+
+      .about-profile img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+      }
+
+      .about-profile figcaption {
+        padding: 14px 16px;
+        color: var(--accent);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
       }
 
       .big-copy {
@@ -484,12 +506,12 @@
 
 /* FRC portfolio */
 body.portfolio-page {
-  --portfolio-accent: #a8c94f;
+  --portfolio-accent: #c4e866;
   --portfolio-gold: #d9b45b;
   --portfolio-red: #b4474f;
   --portfolio-surface: #172532;
-  --portfolio-line: #3d4b57;
-  --portfolio-muted: #c2c8c9;
+  --portfolio-line: #52616c;
+  --portfolio-muted: #d5dde0;
   background: #0c1218;
   color: #f3f7fb;
   font-family: Inter, "Segoe UI", Arial, sans-serif;
@@ -527,13 +549,13 @@ body.portfolio-page .nav-cta:hover {
 body.portfolio-page .portfolio-nav-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 body.portfolio-page .portfolio-nav-logo {
-  width: 34px;
-  height: 34px;
-  padding: 3px;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
   border: 1px solid var(--portfolio-gold);
   border-radius: 50%;
   background: #111a20;
@@ -895,6 +917,52 @@ body.portfolio-page .media-card {
   text-align: center;
 }
 
+body.portfolio-page .image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 0;
+}
+
+body.portfolio-page .image-card img {
+  width: 100%;
+  min-height: 170px;
+  flex: 1;
+  object-fit: cover;
+}
+
+body.portfolio-page .image-card figcaption {
+  display: grid;
+  gap: 4px;
+  padding: 0 16px 16px;
+}
+
+body.portfolio-page .resource-card {
+  align-content: center;
+  justify-items: start;
+  gap: 10px;
+  padding: 24px;
+  text-align: left;
+}
+
+body.portfolio-page .code-card {
+  grid-column: span 2;
+}
+
+body.portfolio-page .resource-card > span {
+  color: var(--portfolio-gold);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+body.portfolio-page .resource-card .text-link {
+  margin-top: 6px;
+  font-size: 11px;
+}
+
 body.portfolio-page .video-card {
   align-content: center;
   gap: 12px;
@@ -927,6 +995,16 @@ body.portfolio-page .footer {
   border-top-color: var(--portfolio-line);
   color: var(--portfolio-muted);
   font-size: 12px;
+}
+
+body.portfolio-page .footer-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+body.portfolio-page .footer-links a {
+  color: var(--portfolio-muted);
 }
 
 body.portfolio-page .footer a:hover {
@@ -966,12 +1044,36 @@ body.portfolio-page .footer a:hover {
     display: none;
   }
 
+  body.portfolio-page .nav {
+    gap: 10px;
+  }
+
+  body.portfolio-page .brand {
+    font-size: 11px;
+  }
+
+  body.portfolio-page .brandmark {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+
   body.portfolio-page .nav .nav-links.open {
     display: flex;
   }
 
-  body.portfolio-page .nav-cta {
+  body.portfolio-page .landing-nav-link {
     display: none;
+  }
+
+  body.portfolio-page .portfolio-nav-actions .nav-cta:not(.landing-nav-link) {
+    display: inline-flex;
+    padding: 10px 9px;
+    font-size: 10px;
+  }
+
+  body.portfolio-page .portfolio-nav-logo {
+    width: 34px;
+    height: 34px;
   }
 
   body.portfolio-page .hero {
@@ -1002,6 +1104,16 @@ body.portfolio-page .footer a:hover {
 
   body.portfolio-page .footer {
     min-height: 110px;
+    align-items: flex-start;
+  }
+
+  body.portfolio-page .code-card {
+    grid-column: auto;
+  }
+
+  body.portfolio-page .footer-links {
+    flex-wrap: wrap;
+    gap: 12px 18px;
   }
 }
 
