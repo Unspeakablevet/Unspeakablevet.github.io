@@ -484,11 +484,13 @@
 
 /* FRC portfolio */
 body.portfolio-page {
-  --portfolio-accent: #77c6f7;
-  --portfolio-surface: #142338;
-  --portfolio-line: #334960;
-  --portfolio-muted: #b7c6d7;
-  background: #0c1625;
+  --portfolio-accent: #a8c94f;
+  --portfolio-gold: #d9b45b;
+  --portfolio-red: #b4474f;
+  --portfolio-surface: #172532;
+  --portfolio-line: #3d4b57;
+  --portfolio-muted: #c2c8c9;
+  background: #0c1218;
   color: #f3f7fb;
   font-family: Inter, "Segoe UI", Arial, sans-serif;
   line-height: 1.65;
@@ -497,7 +499,7 @@ body.portfolio-page {
 body.portfolio-page .nav {
   min-height: 94px;
   border-bottom-color: var(--portfolio-line);
-  background: #0c1625ed;
+  background: #0c1218ed;
 }
 
 body.portfolio-page .nav .nav-links {
@@ -601,12 +603,29 @@ body.portfolio-page .btn {
 body.portfolio-page .btn.primary {
   border-color: var(--portfolio-accent);
   background: var(--portfolio-accent);
-  color: #061421;
+  color: #111a18;
 }
 
 body.portfolio-page .btn.ghost {
-  background: transparent;
+  background: #25333d;
+  border-color: var(--portfolio-gold);
   color: #f3f7fb;
+}
+
+body.portfolio-page .btn.ghost:hover {
+  background: #33434d;
+  border-color: var(--portfolio-accent);
+}
+
+body.portfolio-page .btn.landing-link {
+  background: #202d36;
+  border-color: var(--portfolio-gold);
+  color: #fffdf4;
+}
+
+body.portfolio-page .btn.landing-link:hover {
+  background: #2d3c45;
+  border-color: var(--portfolio-accent);
 }
 
 body.portfolio-page .hero-visual {
@@ -622,6 +641,20 @@ body.portfolio-page .hero-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+body.portfolio-page .team-logo {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 1;
+  width: 92px;
+  height: 92px;
+  padding: 8px;
+  border: 1px solid rgba(217, 180, 91, 0.7);
+  border-radius: 50%;
+  background: rgba(12, 18, 24, 0.84);
+  object-fit: contain;
 }
 
 body.portfolio-page .image-tag {
@@ -782,7 +815,7 @@ body.portfolio-page .text-link {
 body.portfolio-page .feature-panel {
   border: 1px solid var(--portfolio-line);
   border-radius: 8px;
-  background: #192d44;
+  background: #1d2b35;
   overflow: hidden;
 }
 
@@ -799,6 +832,7 @@ body.portfolio-page .panel-foot {
 body.portfolio-page .panel-foot {
   border-top: 1px solid var(--portfolio-line);
   border-bottom: 0;
+  background: #24323a;
 }
 
 body.portfolio-page .log-item {
