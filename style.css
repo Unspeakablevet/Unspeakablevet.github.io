@@ -537,7 +537,6 @@ body.portfolio-page .eyebrow,
 body.portfolio-page .kicker,
 body.portfolio-page .micro,
 body.portfolio-page .step-label,
-body.portfolio-page .placeholder,
 body.portfolio-page .panel-top,
 body.portfolio-page .panel-foot,
 body.portfolio-page .photo-credit,
@@ -757,12 +756,6 @@ body.portfolio-page .step-copy p {
   font-size: 14px;
 }
 
-body.portfolio-page .placeholder {
-  color: #d2deea;
-  font-size: 10px;
-  line-height: 1.5;
-}
-
 body.portfolio-page .step-icon {
   position: absolute;
   right: 18px;
@@ -833,7 +826,7 @@ body.portfolio-page .gallery-grid {
 }
 
 body.portfolio-page .gallery-main,
-body.portfolio-page .media-placeholder {
+body.portfolio-page .media-card {
   min-height: 260px;
   margin: 0;
   border: 1px solid var(--portfolio-line);
@@ -848,7 +841,7 @@ body.portfolio-page .gallery-main img {
   object-fit: cover;
 }
 
-body.portfolio-page .media-placeholder {
+body.portfolio-page .media-card {
   display: grid;
   place-items: center;
   padding: 20px;
