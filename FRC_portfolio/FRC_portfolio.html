@@ -15,11 +15,12 @@
   <body class="portfolio-page">
     <div class="grain" aria-hidden="true"></div>
     <header class="nav wrap">
-      <a class="brand" href="#top">
+      <a class="brand" href="../index.html">
         <span class="brandmark">//</span>
         ENGINEERING<span class="muted">.PORTFOLIO</span>
       </a>
       <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
         <a href="#overview">Overview</a>
         <a href="#process">Process</a>
         <a href="#intake">Intake</a>
@@ -81,16 +82,17 @@
         <div class="wrap">
           <div class="section-head">
             <span class="kicker">01 / THE PROJECT</span>
-            <h2>More than a <i>finished robot.</i></h2>
+            <h2>More than a <i>kit.</i></h2>
           </div>
           <div class="overview-grid">
             <p class="big-copy">
               Engineering is a cycle of ideas, prototypes, testing, and
-              decisions. The final mechanism is only part of the story.
+              decisions. The process leads to a better understanding of the
+              problem and a more effective solution.
             </p>
             <div class="overview-text">
               <p>
-                This portfolio documents contributions to a 2026 FIRST Robotics
+                This portfolio documents contributions to FRC team 8303's 2026 FIRST Robotics
                 Competition robot rebuild across
                 <strong
                   >mechanical design, fabrication, programming, and team
@@ -110,9 +112,7 @@
           </div>
           <div class="stats">
             <div><span>2026</span><small>ROBOT SEASON</small></div>
-            <div><span>04</span><small>CONTRIBUTION AREAS</small></div>
-            <div><span>01</span><small>FEATURED SUBSYSTEM</small></div>
-            <div><span>&#8734;</span><small>OPPORTUNITIES TO ITERATE</small></div>
+            <div><span>Intake</span><small>FEATURED SUBSYSTEM</small></div>
           </div>
         </div>
       </section>
@@ -134,8 +134,8 @@
               <h3>Define the challenge.</h3>
               <p>
                 Start with what the robot needs to accomplish. Identify
-                game-piece geometry, space limitations, available hardware, and
-                the conditions the mechanism must handle. Translate these into
+                game-piece geometry, space limitations, available hardware, accessable
+               tools, and the conditions the mechanism must handle. Translate these into
                 testable requirements, such as reliable acquisition, controlled
                 movement, protected game pieces, and smooth handoff to the next
                 subsystem.
@@ -217,7 +217,7 @@
               consistently prevented rollout while still allowing balls to feed
               from the hopper into the shooter.
             </p>
-            <a class="text-link" href="#gallery">SEE PROJECT MEDIA &#8599;</a>
+            <a class="text-link" href="#gallery">SEE OUR WORK &#8599;</a>
           </div>
           <div class="feature-panel">
             <div class="panel-top">
@@ -226,7 +226,7 @@
             <div class="log-item">
               <span class="log-dot"></span>
               <div>
-                <small>STAGE A</small><strong>Initial approach</strong>
+                <small>STAGE A </small><strong>Initial approach</strong>
                 <p>
                   Start with the standard KitBot intake as the foundation for the
                   2026 rebuild.
@@ -237,7 +237,7 @@
             <div class="log-item">
               <span class="log-dot"></span>
               <div>
-                <small>STAGE B</small><strong>Programming + integration</strong>
+                <small>STAGE B </small><strong>Programming + integration</strong>
                 <p>
                   Retrofit the intake to the MAXSwerve base, adjusting height,
                   pitch, width, and mounting hardware.
@@ -248,7 +248,7 @@
             <div class="log-item">
               <span class="log-dot"></span>
               <div>
-                <small>STAGE C</small><strong>Revision + validation</strong>
+                <small>STAGE C </small><strong>Revision + validation</strong>
                 <p>
                   Shave the added foam through testing until rollout was stopped
                   without blocking hopper-to-shooter feeding.
@@ -294,10 +294,21 @@
             <span>+</span><strong>PROGRAMMING</strong
             ><small>Controls, subsystem behavior, and integration logic</small>
           </div>
-          <div class="media-card">
-            <span>+</span><strong>TESTING & ITERATION</strong
-            ><small>Repeated cycles, driver feedback, and targeted revisions</small>
-          </div>
+          <figure class="media-card video-card">
+            <video
+              controls
+              preload="metadata"
+              aria-label="FRC robot testing and iteration video"
+            >
+              <source src="assets/robot_testing.MOV" type="video/quicktime" />
+              Your browser does not support embedded video. You can
+              <a href="assets/robot_testing.MOV">download the testing video</a>.
+            </video>
+            <figcaption>
+              <strong>TESTING &amp; ITERATION</strong>
+              <small>Repeated cycles, driver feedback, and targeted revisions</small>
+            </figcaption>
+          </figure>
         </div>
       </section>
       <section class="section closing">
@@ -316,6 +327,7 @@
             rel="noopener noreferrer"
             >VIEW GITHUB PROFILE &#8599;</a
           >
+          <a class="btn ghost" href="../index.html">BACK TO LANDING PAGE &#8593;</a>
         </div>
       </section>
     </main>

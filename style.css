@@ -849,6 +849,29 @@ body.portfolio-page .media-card {
   text-align: center;
 }
 
+body.portfolio-page .video-card {
+  align-content: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+body.portfolio-page .video-card video {
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  background: #07101a;
+  border-radius: 4px;
+}
+
+body.portfolio-page .video-card figcaption {
+  display: grid;
+  gap: 4px;
+}
+
+body.portfolio-page .video-card small {
+  color: var(--portfolio-muted);
+}
+
 body.portfolio-page .closing {
   border-top: 1px solid var(--portfolio-line);
 }
