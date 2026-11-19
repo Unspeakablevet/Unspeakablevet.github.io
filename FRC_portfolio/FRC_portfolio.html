@@ -35,13 +35,21 @@
       >
         MENU
       </button>
-      <a
-        class="nav-cta"
-        href="https://github.com/Unspeakablevet"
-        target="_blank"
-        rel="noopener noreferrer"
-        >GITHUB &#8599;</a
-      >
+      <div class="portfolio-nav-actions">
+        <img
+          class="portfolio-nav-logo"
+          src="assets/team_logo.png"
+          alt="FRC Team 8303 team logo"
+        />
+        <a class="nav-cta landing-nav-link" href="../index.html">HOME</a>
+        <a
+          class="nav-cta"
+          href="https://github.com/Unspeakablevet"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GITHUB &#8599;</a
+        >
+      </div>
     </header>
     <main id="top">
       <section class="hero wrap">
@@ -71,11 +79,6 @@
             alt="FRC teammates posing with a competition robot"
             fetchpriority="high"
           />
-          <img
-            class="team-logo"
-            src="assets/team_logo.png"
-            alt="FRC Team 8303 team logo"
-          />
           <div class="image-tag">
             <span>FIELD NOTES / 001</span><strong>TEAM + ROBOT</strong>
           </div>
@@ -90,11 +93,17 @@
             <h2>More than a <i>kit.</i></h2>
           </div>
           <div class="overview-grid">
-            <p class="big-copy">
-              Engineering is a cycle of ideas, prototypes, testing, and
-              decisions. The process leads to a better understanding of the
-              problem and a more effective solution.
-            </p>
+            <div class="overview-primary">
+              <p class="big-copy">
+                Engineering is a cycle of ideas, prototypes, testing, and
+                decisions. The process leads to a better understanding of the
+                problem and a more effective solution.
+              </p>
+              <div class="stats">
+                <div><span>2026</span><small>ROBOT SEASON</small></div>
+                <div><span>Intake</span><small>FEATURED SUBSYSTEM</small></div>
+              </div>
+            </div>
             <div class="overview-text">
               <p>
                 <strong>Project description:</strong> The 2026 FRC robot rebuild
@@ -120,10 +129,6 @@
                 the wider square base.
               </p>
             </div>
-          </div>
-          <div class="stats">
-            <div><span>2026</span><small>ROBOT SEASON</small></div>
-            <div><span>Intake</span><small>FEATURED SUBSYSTEM</small></div>
           </div>
         </div>
       </section>
@@ -228,8 +233,9 @@
               <span class="step-label">ROBOT INTEGRATION</span>
               <h3>Test the real constraints.</h3>
               <p>
-                Install the satisfying prototype on the robot, gather feedback
-                on its implementation, and test it with the drive base, hopper,
+                Install the prototype that satisfied the initial goal on the
+                robot, gather feedback on its implementation, and test it with
+                the drive base, hopper,
                 shooter, controls, and other subsystems. Continue gathering
                 feedback and iterating on the design until the full system meets
                 the goal.
@@ -281,6 +287,21 @@
               consistently prevented rollout while still allowing balls to feed
               from the hopper into the shooter.
             </p>
+            <p>
+              The finished intake had to balance several competing requirements:
+              it needed enough contact to control the ball, enough clearance to
+              avoid restricting the feed, and enough structural support to stay
+              aligned while the robot moved. Testing focused on repeatable
+              acquisition, controlled retention, and a clean handoff into the
+              hopper and shooter.
+            </p>
+            <p>
+              After the off-robot prototype met its initial goal, it was mounted
+              to the MAXSwerve robot and tested alongside the drive base and
+              other subsystems. Driver feedback from those tests guided the final
+              adjustments before the design was manufactured with its intended
+              materials and used in practice cycles.
+            </p>
             <a class="text-link" href="#gallery">SEE OUR WORK &#8599;</a>
           </div>
           <div class="feature-panel">
@@ -319,6 +340,28 @@
                 </p>
               </div>
               <b>03</b>
+            </div>
+            <div class="log-item">
+              <span class="log-dot"></span>
+              <div>
+                <small>STAGE D </small><strong>Final design</strong>
+                <p>
+                  Manufacture the satisfying design with its intended materials
+                  and install it for full-system testing.
+                </p>
+              </div>
+              <b>04</b>
+            </div>
+            <div class="log-item">
+              <span class="log-dot"></span>
+              <div>
+                <small>STAGE E </small><strong>Practice + refinement</strong>
+                <p>
+                  Run repeated cycles, gather driver feedback, and refine the
+                  robot's operation for competition.
+                </p>
+              </div>
+              <b>05</b>
             </div>
             <div class="panel-foot">
               STATUS: INTAKE REBUILD DOCUMENTED
@@ -387,16 +430,6 @@
             adapted for the MAXSwerve robot, with reliable ball retention and
             feeding built into the final design.
           </p>
-          <a
-            class="btn primary"
-            href="https://github.com/Unspeakablevet"
-            target="_blank"
-            rel="noopener noreferrer"
-            >VIEW GITHUB PROFILE &#8599;</a
-          >
-          <a class="btn landing-link" href="../index.html"
-            >BACK TO LANDING PAGE &#8593;</a
-          >
         </div>
       </section>
     </main>

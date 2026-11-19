@@ -524,6 +524,34 @@ body.portfolio-page .nav-cta:hover {
   color: var(--portfolio-accent);
 }
 
+body.portfolio-page .portfolio-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+body.portfolio-page .portfolio-nav-logo {
+  width: 34px;
+  height: 34px;
+  padding: 3px;
+  border: 1px solid var(--portfolio-gold);
+  border-radius: 50%;
+  background: #111a20;
+  object-fit: contain;
+}
+
+body.portfolio-page .landing-nav-link {
+  background: var(--portfolio-accent);
+  border-color: var(--portfolio-accent);
+  color: #111a18;
+}
+
+body.portfolio-page .landing-nav-link:hover {
+  border-color: var(--portfolio-gold);
+  background: #bddb65;
+  color: #111a18;
+}
+
 body.portfolio-page .hero {
   min-height: 730px;
   grid-template-columns: 1fr 46%;
@@ -617,17 +645,6 @@ body.portfolio-page .btn.ghost:hover {
   border-color: var(--portfolio-accent);
 }
 
-body.portfolio-page .btn.landing-link {
-  background: #202d36;
-  border-color: var(--portfolio-gold);
-  color: #fffdf4;
-}
-
-body.portfolio-page .btn.landing-link:hover {
-  background: #2d3c45;
-  border-color: var(--portfolio-accent);
-}
-
 body.portfolio-page .hero-visual {
   position: relative;
   height: 520px;
@@ -641,20 +658,6 @@ body.portfolio-page .hero-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-body.portfolio-page .team-logo {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  z-index: 1;
-  width: 92px;
-  height: 92px;
-  padding: 8px;
-  border: 1px solid rgba(217, 180, 91, 0.7);
-  border-radius: 50%;
-  background: rgba(12, 18, 24, 0.84);
-  object-fit: contain;
 }
 
 body.portfolio-page .image-tag {
@@ -709,6 +712,10 @@ body.portfolio-page .overview-grid {
   align-items: start;
 }
 
+body.portfolio-page .overview-primary {
+  min-width: 0;
+}
+
 body.portfolio-page .big-copy {
   font-size: clamp(24px, 3vw, 36px);
   line-height: 1.35;
@@ -721,9 +728,9 @@ body.portfolio-page .overview-text {
 
 body.portfolio-page .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 body.portfolio-page .stats div {
@@ -798,6 +805,11 @@ body.portfolio-page .step-icon {
 body.portfolio-page .feature {
   background: var(--portfolio-surface);
   border-block: 1px solid var(--portfolio-line);
+  padding-block: 128px;
+}
+
+body.portfolio-page .feature .kicker {
+  color: var(--portfolio-gold);
 }
 
 body.portfolio-page .feature-grid {
