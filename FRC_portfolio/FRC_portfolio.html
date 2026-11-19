@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0b111b" />
     <meta
       name="description"
@@ -15,15 +15,25 @@
   <body class="portfolio-page">
     <div class="grain" aria-hidden="true"></div>
     <header class="nav wrap">
-      <a class="brand" href="#top"
-        ><span class="brandmark">//</span> ENGINEERING<span class="muted"
-          >.PORTFOLIO</span
-        ></a
-      >
-      <nav aria-label="Main navigation">
-        <a href="#overview">Overview</a><a href="#process">Process</a
-        ><a href="#intake">Intake</a><a href="#gallery">Gallery</a>
+      <a class="brand" href="#top">
+        <span class="brandmark">//</span>
+        ENGINEERING<span class="muted">.PORTFOLIO</span>
+      </a>
+      <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
+        <a href="#overview">Overview</a>
+        <a href="#process">Process</a>
+        <a href="#intake">Intake</a>
+        <a href="#gallery">Gallery</a>
       </nav>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Toggle navigation"
+      >
+        MENU
+      </button>
       <a
         class="nav-cta"
         href="https://github.com/Unspeakablevet"
@@ -98,7 +108,7 @@
             </div>
           </div>
           <div class="stats">
-            <div><span>2025</span><small>ROBOT SEASON</small></div>
+            <div><span>2026</span><small>ROBOT SEASON</small></div>
             <div><span>04</span><small>CONTRIBUTION AREAS</small></div>
             <div><span>01</span><small>FEATURED SUBSYSTEM</small></div>
             <div><span>&#8734;</span><small>OPPORTUNITIES TO ITERATE</small></div>
@@ -300,9 +310,11 @@
       </section>
     </main>
     <footer class="wrap footer">
-      <span>&#169; <span id="year">2026</span> &#183; Trezdin Kade Millon Martinez</span
-      ><span>DESIGNED TO DOCUMENT THE PROCESS.</span
-      ><a href="#top">BACK TO TOP &#8593;</a>
+      <span>
+        &#169; <span id="year">2026</span> &#183;
+        Trezdin Kade Millon Martinez
+      </span>
+      <a href="#top">BACK TO TOP &#8593;</a>
     </footer>
     <script src="../script.js"></script>
   </body>
